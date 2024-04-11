@@ -1,29 +1,45 @@
-# Redux Toolkit TypeScript Example
+# Next JS Case
 
-This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
+## Overview
 
-**Redux Toolkit**(also known as "RTK" for short) provides a standardized way to write Redux logic. It includes utilities that help simplify many common use cases, including [store setup](https://redux-toolkit.js.org/api/configureStore), [creating reducers and writing immutable update logic](https://redux-toolkit.js.org/api/createreducer), and even [creating entire "slices" of state at once](https://redux-toolkit.js.org/api/createslice). This example showcases each of these features in conjunction with Next.js.
+This project is a Next.js application developed as part of a case study.
 
-## Deploy Your Own
+## Technologies Used
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- **Next.js**: A React framework for building server-side rendered (SSR) and statically generated (SSG) web applications.
+- **React**: A JavaScript library for building user interfaces.
+- **Redux Toolkit**: An opinionated, batteries-included toolset for efficient Redux development.
+- **Redux Persist**: A library for persisting and rehydrating a Redux store.
+- **Material-UI**: A popular React UI framework for building responsive web applications with pre-designed components.
+- **Axios**: A promise-based HTTP client for making requests to external APIs.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-redux&project-name=with-redux&repository-name=with-redux)
+## Getting Started
 
-## How to Use
+To run the project locally, follow these steps:
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+1. Clone the repository:
 
-```bash
-npx create-next-app --example with-redux with-redux-app
-```
+   ```bash
+   git clone https://github.com/kursatkarsli/0b7614a5c33af18be1562877d4858d11.git
+   cd 0b7614a5c33af18be1562877d4858d11
+   ```
 
-```bash
-yarn create next-app --example with-redux with-redux-app
-```
+2. Install dependencies using npm or yarn:
 
-```bash
-pnpm create next-app --example with-redux with-redux-app
-```
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+## Additional Notes
+
+- Make sure you have Node.js and npm/yarn installed on your machine before running the project.
+- This project assumes you have a basic understanding of React, Redux, and Material-UI.
