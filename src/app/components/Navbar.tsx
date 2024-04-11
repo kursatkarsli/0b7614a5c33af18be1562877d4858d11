@@ -8,7 +8,7 @@ import { StyledContainer } from "../styles/styledComponents";
 import { NavLink } from "./LinkButton";
 import { SportEnums } from "../types/components.types";
 
-function Tabbar() {
+function Navbar() {
   const params = useParams();
   return (
     <StyledContainer background="#192125" maxWidth="xl" minHeight="3rem">
@@ -89,4 +89,4 @@ function Tabbar() {
     </StyledContainer>
   );
 }
-export default Tabbar;
+export default Navbar;

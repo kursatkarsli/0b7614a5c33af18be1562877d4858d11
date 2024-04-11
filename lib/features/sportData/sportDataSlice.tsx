@@ -1,7 +1,6 @@
 import {
   createAsyncThunk,
   createSlice,
-  current,
   Reducer,
 } from "@reduxjs/toolkit";
 import { AxiosResponse } from "axios";
@@ -78,7 +77,6 @@ export const sportDataSlice = createSlice({
       const newFilteredData = state.sportData.filter((item: any) => {
         return filters.every((filter: any) => {
           if (filter.key === "team") {
-            console.log("ITEM", current(item), filter);
             if (!filter.value || typeof filter.value === "string") {
               return item.teamNames
                 .toLowerCase()
