@@ -6,6 +6,7 @@ import { SoccerIcon } from "public/assets/soccer";
 import { TennisIcon } from "public/assets/tennis";
 import { StyledContainer } from "../styles/styledComponents";
 import { NavLink } from "./LinkButton";
+import { SportEnums } from "../types/components.types";
 
 function Tabbar() {
   const params = useParams();
@@ -17,10 +18,10 @@ function Tabbar() {
             item
             sx={{
               backgroundColor:
-                params.sportId === "1" ? "#384750" : "transparent",
+                params.sportId === SportEnums.FOOTBALL ? "#384750" : "transparent",
             }}
           >
-            <NavLink href="/SportProgram/1" ariaLabel="Soccer Icon">
+            <NavLink href={`/sportprogram/${SportEnums.FOOTBALL}`} ariaLabel="Soccer Icon">
               <SoccerIcon />
               <Typography
                 component="span"
@@ -37,10 +38,10 @@ function Tabbar() {
             item
             sx={{
               backgroundColor:
-                params.sportId === "2" ? "#384750" : "transparent",
+                params.sportId === SportEnums.BASKETBALL ? "#384750" : "transparent",
             }}
           >
-            <NavLink href="/SportProgram/2" ariaLabel="Soccer Icon">
+            <NavLink href={`/sportprogram/${SportEnums.BASKETBALL}`} ariaLabel="Soccer Icon">
               <BasketballIcon />
               <Typography
                 component="span"
@@ -55,10 +56,10 @@ function Tabbar() {
             item
             sx={{
               backgroundColor:
-                params.sportId === "5" ? "#384750" : "transparent",
+                params.sportId === SportEnums.TENNIS ? "#384750" : "transparent",
             }}
           >
-            <NavLink href="/SportProgram/5" ariaLabel="Soccer Icon">
+            <NavLink href={`/sportprogram/${SportEnums.TENNIS}`} ariaLabel="Soccer Icon">
               <TennisIcon />
               <Typography
                 component="span"

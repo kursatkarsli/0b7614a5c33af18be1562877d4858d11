@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       {
         source: "/",
-        destination: "/SportProgram/1", // Specify the route you want to open
+        destination: "/sportprogram/1", // Specify the route you want to open
         permanent: true,
       },
     ];

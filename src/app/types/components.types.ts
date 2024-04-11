@@ -16,3 +16,8 @@ export interface OutlinedInputI {
   handleChange: (event: any) => void;
   value: string;
 }
+export enum SportEnums{
+  FOOTBALL = "1",
+  BASKETBALL = "2",
+  TENNIS = "5",
+}

@@ -43,7 +43,6 @@ function FilterArea() {
     );
   };
   const handleTeamNameInput = (event: any) => {
-    console.log(event?.target.value);
     dispatch(
       handleFilter({
         iskbet: selector?.filters?.iskbet,
@@ -53,7 +52,6 @@ function FilterArea() {
       })
     );
   };
-  console.log('SELECTOR', selector.filteredData)
   return (
     <StyledContainer
       background="#282F33"

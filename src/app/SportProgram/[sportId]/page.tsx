@@ -22,11 +22,9 @@ function SportProgram() {
   useEffect(() => {
     dispatch(getSportsData(params.sportId));
   }, []);
-  console.log("SELECTOR", selector);
   return (
     <Grid
       container
-      // alignItems={"center"}
       justifyContent={"center"}
       flexWrap={"nowrap"}
       gap={1.5}
